@@ -92,17 +92,37 @@ function App() {
       
       {/* nav bar */}
       <nav className="border-b border-slate-800 p-4 flex justify-between items-center sticky top-0 bg-slate-950/90 backdrop-blur-sm z-50 px-6">
+        {/* logo left */}
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center font-bold italic shadow-lg">S</div>
           <h1 className="text-xl font-bold tracking-tight text-white uppercase">STX<span className="text-orange-500">Airdrop</span></h1>
         </div>
         
-        <button 
-          onClick={handleConnect}
-          className="bg-slate-800 hover:bg-slate-700 text-sm py-2 px-6 rounded-full border border-slate-700 transition-all font-medium"
-        >
-          {stxAddress ? `${stxAddress.slice(0, 5)}...${stxAddress.slice(-4)}` : "Connect Wallet"}
-        </button>
+        {/* navigation buttons right */}
+        <div className="flex items-center gap-4">
+          <a 
+            href="https://github.com/hihenluo/stx-multi-sender.git" 
+            target="_blank" 
+            rel="noreferrer"
+            className="hidden md:block text-xs font-semibold text-slate-400 hover:text-white transition-colors"
+          >
+            Github
+          </a>
+          <a 
+            href="https://github.com/hihenluo/stx-multi-sender/tree/main/contract" 
+            target="_blank" 
+            rel="noreferrer"
+            className="hidden md:block text-xs font-semibold text-slate-400 hover:text-white transition-colors"
+          >
+            Contract
+          </a>
+          <button 
+            onClick={handleConnect}
+            className="bg-slate-800 hover:bg-slate-700 text-sm py-2 px-6 rounded-full border border-slate-700 transition-all font-medium"
+          >
+            {stxAddress ? `${stxAddress.slice(0, 5)}...${stxAddress.slice(-4)}` : "Connect Wallet"}
+          </button>
+        </div>
       </nav>
 
       {/* main dashboard */}
@@ -154,7 +174,7 @@ function App() {
           {/* tx success link */}
           {txId && (
             <div className="mt-8 p-4 bg-green-500/10 border border-green-500/20 rounded-xl animate-in fade-in slide-in-from-bottom-2">
-              <p className="text-green-400 text-sm font-semibold mb-1 flex items-center gap-2">
+              <p className="text-green-400 text-sm font-semibold mb-1 flex items-center gap-2 text-left">
                 <span>✅</span> Broadcast Successful
               </p>
               <a href={`https://explorer.hiro.so/txid/${txId}?chain=mainnet`} target="_blank" rel="noreferrer" className="text-[10px] text-slate-500 break-all underline decoration-slate-800 hover:text-slate-300">
