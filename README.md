@@ -1,3 +1,0 @@
-# StackSend
-
--- MULTI SEND STX TO MULTI ADDRESS DAPPS --
