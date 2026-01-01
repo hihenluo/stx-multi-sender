@@ -98,7 +98,7 @@ SP32YN03PMDGXQA9HYEZS2WBAT32AZKDJTBAPF4T
 
 ## 📄 License
 
-Distributed under the **MIT License**.
+Distributed under the [**MIT License**](https://github.com/hihenluo/stx-multi-sender/blob/main/LICENSE).
 
 <p align="center">
   Built with 🧡 for the Stacks Ecosystem
