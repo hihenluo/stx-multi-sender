@@ -1,0 +1,15 @@
+{
+  "title": "STX Send",
+  "description": "A modern STX and SIP Multi Sender built on Stacks Mainnet.",
+  "type": "dapp",
+  "framework": "clarity, react, vite, typescript, tailwindcss",
+  "useCase": "tools",
+  "complexity": "intermediate",
+  "pages": "https://stxsend.pages.dev/",
+  "tags": [
+    "web3",
+    "smart-contract",
+    "stacks",
+    "clarity"
+  ]
+}
