@@ -28,7 +28,7 @@ const metadata = {
   name: 'STX Multi-Sender',
   description: 'Airdrop STX to multiple addresses',
   url: window.location.origin,
-  icons: ['https://cryptologos.cc/logos/stacks-stx-logo.png']
+  icons: ['https://stacksend.pages.dev/logo.png']
 }
 
 // 3. Create AppKit instance
